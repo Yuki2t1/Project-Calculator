@@ -2,7 +2,7 @@ let first_number=0
 let operator=""
 let second_number=0
 
-
+//this code will be used when i choose to finally utilize maps filters or reduce
 
 //function performs addition
 function add(val1,val2){

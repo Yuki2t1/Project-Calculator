@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Cedarville+Cursive&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
+        
         <input type="text" id="display">
         <div id="list_container">
             <ul>
+                <li>
+                    <a href="https://github.com/Yuki2t1">calculator</a>
+                </li>
                 <li>
                     <button id="one" class="button" onclick="populate_with_nums('1')">
                         1
@@ -21,7 +28,7 @@
                     <button id="three" class="button" onclick="populate_with_nums('3')">
                         3
                     </button>
-                    <button id="equal"  class="button" onclick="populate_with_operator('+')">
+                    <button id="plus"  class="button" onclick="populate_with_operator('+')">
                         +
                     </button>
                 </li>
@@ -35,7 +42,7 @@
                     <button id="six" class="button" onclick="populate_with_nums('6')">
                         6
                     </button>
-                    <button id="equal"  class="button" onclick="populate_with_operator('-')">
+                    <button id="minus"  class="button" onclick="populate_with_operator('-')">
                         -
                     </button>
                 </li>
@@ -49,8 +56,8 @@
                     <button id="nine" class="button" onclick="populate_with_nums('9')">
                         9
                     </button>
-                    <button id="equal"  class="button" onclick="populate_with_operator('*')">
-                        *
+                    <button id="mulitply"  class="button" onclick="populate_with_operator('*')">
+                        x
                     </button>
                 </li>
                 <li>
@@ -58,11 +65,13 @@
                         C
                     </button>
 
-                    
+                    <button id="point"  class="button" onclick="populate_with_operator('.')">
+                        .
+                    </button>
                     <button id="equal"  class="button" onclick="populate_with_operator('/')">
                         /
                     </button>
-                    <button id="equal"  class="button" onclick="operate()">
+                      <button id="equal"  class="button" onclick="operate()">
                         =   
                     </button>
                 </li>

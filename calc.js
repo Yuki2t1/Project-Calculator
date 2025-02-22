@@ -1,6 +1,7 @@
 ﻿//this file will take care of the getting the values of the button and printing them out on the display
 //calling in the buttons
 var Display=document.getElementById("display")
+//numbers
 const one=document.querySelector("one")
 const two=document.querySelector("two")
 const three=document.querySelector("three")
@@ -10,8 +11,7 @@ const six=document.querySelector("six")
 const seven=document.querySelector("seven")
 const eight=document.querySelector("eight")
 const nine=document.querySelector("nine")
-const equal=document.querySelector("equal")
-const clear=document.querySelector("clear")
+//operators
 
 //get the text on the buttons
 
@@ -48,13 +48,12 @@ function reset(input){
 }
 //performs the calculations
 function operate(){
-
     RESULT=eval(Display.value)
     console.log(RESULT)
     Display.value=(RESULT)
-    return RESULT
 }
 
-operate()
+
+
 
 console.log(populate);
