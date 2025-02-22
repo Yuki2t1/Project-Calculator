@@ -12,43 +12,57 @@
         <div id="list_container">
             <ul>
                 <li>
-                    <button id="one" class="button" onclick="populate('1')">
+                    <button id="one" class="button" onclick="populate_with_nums('1')">
                         1
                     </button>
-                    <button id="two" class="button" onclick="populate('2')">
+                    <button id="two" class="button" onclick="populate_with_nums('2')">
                         2
                     </button>
-                    <button id="three" class="button" onclick="populate('3')">
+                    <button id="three" class="button" onclick="populate_with_nums('3')">
                         3
                     </button>
+                    <button id="equal"  class="button" onclick="populate_with_operator('+')">
+                        +
+                    </button>
                 </li>
                 <li>
-                    <button id="four" class="button" onclick="populate('4')">
+                    <button id="four" class="button" onclick="populate_with_nums('4')">
                         4
                     </button>
-                    <button id="five" class="button" onclick="populate('5')">
+                    <button id="five" class="button" onclick="populate_with_nums('5')">
                         5
                     </button>
-                    <button id="six" class="button" onclick="populate('6')">
+                    <button id="six" class="button" onclick="populate_with_nums('6')">
                         6
                     </button>
+                    <button id="equal"  class="button" onclick="populate_with_operator('-')">
+                        -
+                    </button>
                 </li>
                 <li>
-                    <button id="seven" class="button" onclick="populate('7')">
+                    <button id="seven" class="button" onclick="populate_with_nums('7')">
                         7
                     </button>
-                    <button id="eight" class="button" onclick="populate('8')">
+                    <button id="eight" class="button" onclick="populate_with_nums('8')">
                         8
                     </button>
-                    <button id="nine" class="button" onclick="populate('9')">
+                    <button id="nine" class="button" onclick="populate_with_nums('9')">
                         9
+                    </button>
+                    <button id="equal"  class="button" onclick="populate_with_operator('*')">
+                        *
                     </button>
                 </li>
                 <li>
-                    <button id="clear" class="button" onclick="populate('')">
+                    <button id="clear" class="button" onclick="reset('')">
                         C
                     </button>
-                    <button id="equal"  class="button" onclick="populate('=')">
+
+                    
+                    <button id="equal"  class="button" onclick="populate_with_operator('/')">
+                        /
+                    </button>
+                    <button id="equal"  class="button" onclick="operate()">
                         =   
                     </button>
                 </li>
@@ -58,7 +72,7 @@
         
         </div>
         
-    <script src="home.js"></script>
+    <script src="calc.js"></script>
     <script src="front-end.js"></script>
 </body>
 </html>

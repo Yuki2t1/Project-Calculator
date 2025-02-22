@@ -29,10 +29,32 @@ const clear=document.querySelector("clear")
 //Equal.addEventListener("click",populate(Equal))
 //clear.addEventListener("click",populate(Clear))
 
-function populate(input){
-    Display.value=input
-
+function populate_with_nums(input){
+    Display.value+=input
+    let number=Display.value
+    return number
 }
 
+function populate_with_operator(input){
+    Display.value+=input
+    let operator=Display.value
+    return operator
+}
+
+
+//resets the values and operators
+function reset(input){
+    Display.value=""
+}
+//performs the calculations
+function operate(){
+
+    RESULT=eval(Display.value)
+    console.log(RESULT)
+    Display.value=(RESULT)
+    return RESULT
+}
+
+operate()
 
 console.log(populate);

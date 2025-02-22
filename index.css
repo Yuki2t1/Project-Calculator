@@ -15,6 +15,18 @@ ul{
     height: 70px;
     width:  70px;
     cursor: pointer;
+    font-family: roboto;
+    font-size: 20px;
+
+}
+
+.button:hover{
+    background-color: rgb(235, 240, 245);
+    
+}
+
+.button:active{
+    background-color: rgb(180, 173, 173);
     
 }
 
@@ -23,4 +35,5 @@ ul{
     height:400px;
     
 }
+
 
