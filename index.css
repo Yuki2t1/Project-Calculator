@@ -1,0 +1,26 @@
+#container{
+    background-color: #2E0C16;
+    width: 400;
+    height:406px;
+    display: flex;
+    justify-self: center;
+}
+
+ul{
+    margin-right: 20px;
+    list-style-type: none;
+}
+.button{
+    border-radius:10px;
+    height: 70px;
+    width:  70px;
+    cursor: pointer;
+    
+}
+
+#display{
+    width: 500px;
+    height:400px;
+    
+}
+
